@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="{{vendor}}/vendor/jasmine/jasmine.css">
   <script type="text/javascript" src="{{vendor}}/vendor/jasmine/jasmine.js"></script>
+  <script type="text/javascript" src="{{vendor}}/vendor/jasmine/console_reporter.js"></script>
   <script type="text/javascript" src="{{vendor}}/vendor/jasmine/jasmine-html.js"></script>
 
   <script type="text/javascript">
@@ -15,13 +16,9 @@
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
 
-      var trivialReporter = new jasmine.TrivialReporter();
+      var consoleReporter = new jasmine.ConsoleReporter(function(x) { console.log(x) }, function(runner) { console.log("SHIKEN: Failed (" + runner.results().failedCount + ")") }, true);
 
-      jasmineEnv.addReporter(trivialReporter);
-
-      jasmineEnv.specFilter = function(spec) {
-        return trivialReporter.specFilter(spec);
-      };
+      jasmineEnv.addReporter(consoleReporter);
 
       var currentWindowOnload = window.onload;
 
