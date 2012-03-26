@@ -1,0 +1,12 @@
+{
+  "name": "tester",
+  "description": "Test",
+  "version": "0.0.1",
+  "author": "Keith Pitt <me@keithpitt.com>",
+  "dependencies": {
+    "colors": "0.x.x",
+    "optimist": "0.2.x",
+    "phantom": "0.3.x",
+    "temp": "0.4.0"
+  }
+}
