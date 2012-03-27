@@ -22,13 +22,13 @@ Jest copies the [Sprockets](https://github.com/sstephenson/sprockets) API. Which
 //= require ./src/song
 ```
 
-You can use the command line option `-I` to include a path that the requires will look in. For example, if you do this:
+You can use the command line option `-I` to include a path that the required files will look for in. For example, if you do this:
 
 ```javascript
 //= require jquery
 ```
 
-You can run define what folder to look for the `jquery` file in:
+You can define what folder to look for the `jquery` file in like so:
 
 ```bash
 jest -I vendor/assets/javascript specs/player_spec.js
