@@ -6,6 +6,8 @@ Jest is a tool for running [Jasmine](https://github.com/pivotal/jasmine) unit te
 
 Jest was created by a Rails 3.2 developer, who was writing many Jasmine specs, that wanted it to be extreemly easy to run a single file from the command line and get super fast feedback.
 
+![jest](https://github.com/keithpitt/jest/blob/master/docs/screenshot.png?raw=true)
+
 ## Usage
 
 ```bash
