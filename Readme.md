@@ -8,6 +8,7 @@ jest is a tool for running Jasmine unit tests user fast in the console without s
 
 ```bash
 jest something_spec.js
+jest specs/
 ```
 
 jest supports CoffeeScript, so if you file looks something like this:
@@ -23,9 +24,26 @@ jest copies the sprockets API. Which means you can write things like this in you
 //= require ./src/song
 ```
 
+You can use the command line option `-I` to include a path that the requires will look in. For example, if you do this:
+
+```javascript
+//= require jquery
+```
+
+You can run define what folder to look for the `jquery` file in:
+
+```bash
+jest -I vendor/assets/javascript specs/player_spec.js
+```
+
 ## Installation
 
 At the moment, you need to clone down the repo, symlink the bin file and use it that way. I have plans to properly release it as an npm module in the future.
+
+After you have cloned down the repo, make sure you have the following and latest versions of:
+
+- [http://nodejs.org/](Node.JS)
+- [http://www.phantomjs.org/](PhantomJS)
 
 ## Note on Patches/Pull Requests
 
