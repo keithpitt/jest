@@ -153,7 +153,11 @@ jasmine.ConsoleReporter = function(print, doneCallback, showColors) {
       for (var j = 0; j < suiteResult.failedSpecResults.length; j++) {
         var failedSpecResult = suiteResult.failedSpecResults[j];
         var stackTraces = [];
-        for (var k = 0; k < failedSpecResult.items_.length; k++) stackTraces.push(failedSpecResult.items_[k].trace.stack);
+        for (var k = 0; k < failedSpecResult.items_.length; k++) {
+          // console.debug(failedSpecResult.items_[k].trace);
+          // stackTraces.push(failedSpecResult.items_[k].trace.stack);
+          stackTraces.push(failedSpecResult.items_[k].trace.message);
+        }
         callback(suiteResult.description, failedSpecResult.description, stackTraces);
       }
     }
