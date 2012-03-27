@@ -57,6 +57,7 @@ After you have cloned down the repo, make sure you have the following and latest
 
 - [Node.JS](http://nodejs.org/)
 - [PhantomJS](http://www.phantomjs.org/)
+- [CoffeeScript](https://github.com/jashkenas/coffee-script)
 
 ## Note on Patches/Pull Requests
 
