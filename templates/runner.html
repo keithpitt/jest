@@ -22,7 +22,7 @@
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
 
-      var consoleReporter = new jasmine.ConsoleReporter(function(x) { console.log(x) }, function(runner) { console.log("SHIKEN: Failed (" + runner.results().failedCount + ")") }, true);
+      var consoleReporter = new jasmine.ConsoleReporter(function(x) { console.log(x) }, function(runner) { console.log("JESTER: Failed (" + runner.results().failedCount + ")") }, true);
 
       jasmineEnv.addReporter(consoleReporter);
 
