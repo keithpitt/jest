@@ -22,7 +22,7 @@
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
 
-      var consoleReporter = new jasmine.ConsoleReporter(function(x) { console.log(x) }, function(runner) { console.log("JASMINE: Failed (" + runner.results().failedCount + ")") }, true);
+      var consoleReporter = new jasmine.ConsoleReporter(function(x) { console.log(x) }, function(runner) { console.log("JEST: Failed (" + runner.results().failedCount + ")") }, true);
 
       jasmineEnv.addReporter(consoleReporter);
 
