@@ -2,7 +2,7 @@
 
 __Note: Jest hasn't been "officially" released yet. Its still very much an experiment. Don't let that turn you away though! It should still work for you__
 
-Jest is a tool for running [Jasmine](https://github.com/pivotal/jasmine) unit tests user fast in the console without spinning up a browser. It also supports CoffeeScript.
+Jest is a tool for running [Jasmine](https://github.com/pivotal/jasmine) unit tests suser fast in the console without spinning up a browser. It also supports CoffeeScript.
 
 Jest was created by a Rails 3.2 developer, who was writing many Jasmine specs, that wanted it to be extreemly easy to run a single file from the command line and get super fast feedback.
 
