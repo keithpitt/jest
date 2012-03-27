@@ -1,23 +1,21 @@
-# jest
+# Jest
 
-_Note: I wrote this in about 3 hours, it's probably buggy as hell, but give it a go if you'r keen._
+_Note: I wrote this in about 3 hours, it's probably buggy as hell, but give it a go if you're keen._
 
-jest is a tool for running Jasmine unit tests user fast in the console without spinning up a browser.
+Jest is a tool for running [Jasmine](https://github.com/pivotal/jasmine) unit tests user fast in the console without spinning up a browser. It also supports CoffeeScript.
 
 ## Usage
 
 ```bash
 jest something_spec.js
 jest specs/
+jest something_spec.js.coffee
+jest something_spec.coffee
 ```
-
-jest supports CoffeeScript, so if you file looks something like this:
-
-`jest something_spec.js.coffee`, it will just work.
 
 ## Sprockets
 
-jest copies the sprockets API. Which means you can write things like this in your specs and have them work as you'd expect.
+Jest copies the [Sprockets](https://github.com/sstephenson/sprockets) API. Which means you can write things like this in your specs and have them work as you'd expect.
 
 ```javascript
 //= require ./src/player
@@ -42,8 +40,8 @@ At the moment, you need to clone down the repo, symlink the bin file and use it 
 
 After you have cloned down the repo, make sure you have the following and latest versions of:
 
-- [http://nodejs.org/](Node.JS)
-- [http://www.phantomjs.org/](PhantomJS)
+- [Node.JS](http://nodejs.org/)
+- [PhantomJS](http://www.phantomjs.org/)
 
 ## Note on Patches/Pull Requests
 
