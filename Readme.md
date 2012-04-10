@@ -51,13 +51,18 @@ This means you can just `jest spec/javascripts/assets/model_spec.js` and have it
 
 ## Installation
 
-At the moment, you need to clone down the repo, symlink the bin file and use it that way. I have plans to properly release it as an npm module in the future.
+I have plans to properly release it as an npm module but in the mean time...
 
-After you have cloned down the repo, make sure you have the following and latest versions of:
+Make sure you have the latest versions of:
 
 - [Node.JS](http://nodejs.org/)
 - [PhantomJS](http://www.phantomjs.org/)
-- [CoffeeScript](https://github.com/jashkenas/coffee-script)
+
+```
+git clone git://github.com/keithpitt/jest.git
+cd jest
+npm install -g .
+```
 
 ## Copyright
 
